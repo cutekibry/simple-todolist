@@ -1,0 +1,79 @@
+:root {
+  --todo-list-font-size: 2rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.app {
+  text-align: center;
+  padding-top: 12rem;
+
+  .header {
+    font-size: 4rem;
+  }
+
+  .todo-list {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    width: 40rem;
+    margin: 0 auto;
+
+    .insert-bar {
+      padding: 2rem;
+
+      * {
+        font-size: var(--todo-list-font-size);
+      }
+    }
+
+    .search-bar {
+      padding: 2rem;
+
+      * {
+        font-size: var(--todo-list-font-size);
+      }
+    }
+
+    .show-area {
+      font-size: var(--todo-list-font-size);
+
+      .todo-header,
+      .todo-row {
+        display: grid;
+        grid-template-columns: 8rem auto;
+        font-size: 2rem;
+      }
+
+      .todo-header {
+        font-weight: bold;
+      }
+
+      .todo-row {
+        padding-top: 1rem;
+
+        .todo-content {
+          text-align: left;
+          transition: .2s;
+          white-space: pre-wrap;
+          word-break: break-word;
+        }
+
+        .todo-content-done {
+          /* text-decoration: line-through; */
+          color: grey;
+        }
+      }
+    }
+
+  }
+
+  .footer {
+    font-size: 1.5rem;
+  }
+}
