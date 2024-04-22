@@ -1,5 +1,7 @@
 :root {
   --todo-list-font-size: 2rem;
+  --footer-font-size: 1.2rem;
+
   --color-primary: #6200EE;
   --color-primary-variant: #3700B3;
   --color-secondary: #03DAC6;
@@ -25,6 +27,8 @@ html {
   background: none;
   border: none;
   outline-style: none;
+  text-decoration: none;
+  color: var(--color-on-background);
 }
 
 body {
@@ -113,8 +117,9 @@ body {
   }
 
   .footer {
+    font-size: var(--footer-font-size);
     margin-top: 2rem;
-    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -178,5 +183,12 @@ button:disabled {
 }
 
 button:enabled:hover {
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-primary-variant);
+}
+a:hover {
   color: var(--color-primary);
 }
