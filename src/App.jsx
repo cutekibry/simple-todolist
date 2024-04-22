@@ -1,7 +1,7 @@
 import './App.css'  
-import TodoList from './Todolist.jsx'
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
+import TodoList from './components/TodoList.jsx';
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
